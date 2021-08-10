@@ -1,0 +1,27 @@
+<view class="index">
+  <view class="memory-index-hd">
+    <view class="flex-wrp-center-row">
+      <view class="memory-index-hd-desc">我们在一起</view>
+      <view class="memory-index-hd-hi">{{totalDay}}</view>
+      <view class="memory-index-hd-desc">天啦!</view>
+    </view>
+    <view class="flex-wrp-center-row">
+      <view class="memory-index-hd-desc">我们领证</view>
+      <view class="memory-index-hd-hi" bindtap="showVideo">{{totalMarryDay}}</view>
+      <view class="memory-index-hd-desc">天啦!</view>
+    </view>
+  </view>
+
+   <video id="myVideo" class="{{videoShow ? 'video_display' : 'video_display_none'}}"  src="https://xxxxxxxxxx.cos.ap-shanghai.myqcloud.com/output.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' duration='82' custom-cache="{{false}}" show-play-btn="{{true}}" controls>
+   </video>
+
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <view class="flex-wrp-item" style="flex-direction:row;">
+      <view class="task_item_text">{{item.pre}}</view>
+      <view class="task_item_text">{{item.desc}}</view>
+      <view class="task_item_text">{{item.center}}</view>
+      <view class="{{item.finish ? 'task_item_text_hide' : 'task_item_text'}}">{{item.gap}}</view>
+      <view class="{{item.finish ? 'task_item_text_finish' : 'task_item_text'}}">{{item.end}}</view>
+    </view>
+  </block>
+</view>

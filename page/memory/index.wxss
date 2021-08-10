@@ -1,0 +1,63 @@
+@import "../common/index.wxss";
+
+.flex-wrp-center-row{
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.memory-index-hd {
+  padding: 40rpx;
+  text-align: center;
+}
+
+.memory-index-hd-hi {
+  padding: 0 5rpx 0 5rpx;
+  font-size: 70rpx;
+  color: #FF1F71
+}
+
+.memory-index-hd-desc {
+  padding: 0 0 24rpx 0;
+}
+
+.video_display {
+   display: flex;
+   width: auto;
+   height: 900rpx;
+}
+
+.video_display_none {
+   display: none;
+}
+
+.task_item_text {
+  height: auto;
+  width: auto;
+}
+
+.task_item_text_hide {
+  height: auto;
+  width: 0;
+  display: none;
+}
+
+.task_item_text_finish {
+  height: auto;
+  width: auto;
+  color: #FF1F71
+}
+
+.flex-wrp{
+  display:flex;
+}
+
+.flex-wrp-item{
+  display:flex;
+  padding: 20rpx 0 20rpx 60rpx;
+  margin: 20rpx 60rpx 0 60rpx;
+  background-color: #FFFFFF;
+  border-radius: 4rpx;
+}
+

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class='page-body'>
+
+
+    <view wx:for-items="{{list}}" wx:key="{{item.id}}">
+      <view class="postCardContainer">
+        <view>
+          <image class="postCardAvatar" lazy-load="true" src="{{item.userInfo.avatarUrl}}"></image>
+        </view>
+
+        <view class="postCardInfoListContainer">
+          <text class="postName">{{item.userInfo.nickName}}</text>
+          <text>{{item.message}}</text>
+          <image class="postImage" lazy-load="true" mode="widthFix" src="{{item.imageFileIDList[0]}}" id="{{item._id}}" data-name="{{item.imageFileIDList[0]}}" bindtap="previewImage"></image>
+          <text>{{item.dateStr}}</text>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</view>
+
+<view class="sendBox">
+  <view style="flex-grow:1" />
+  <navigator url='../postSend/postsend'>
+    <image class="sendBtn" src="../../image/addition_fill.png" />
+  </navigator>
+</view>

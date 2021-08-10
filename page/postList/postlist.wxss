@@ -1,0 +1,44 @@
+@import "../common/lib/weui.wxss";
+
+.postCardContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0rpx 20rpx 30rpx 20rpx;
+}
+
+.postCardInfoListContainer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 0rpx 20rpx 50rpx 20rpx;
+}
+
+.postCardAvatar {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+
+.postName {
+  font-size: 30rpx;
+  color: #307691;
+}
+
+.postImage {
+  height: 550rpx;
+  width: 550rpx;
+  border-radius: 5rpx;
+}
+
+.sendBox {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+.sendBtn {
+  width: 120rpx;
+  height: 120rpx;
+}
