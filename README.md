@@ -23,3 +23,46 @@ https://developers.weixin.qq.com/minigame/dev/wxcloud/reference-http-api/databas
 4. page目录下，只各个页面，postList下面是帖子列表， postSend是发帖
 5. 彩蛋，是播放有弹幕的视频，在memory/index.wsml   <video id="myVideo"
 
+
+                                            
+## db   
+annivesary                                           
+{
+    "_id": "xxxxxxxxx",
+    "marryBegin":
+    {
+        "$date": "2021-01-01T01:09:09Z"
+    },
+    "loveBegin":
+    {
+        "$date": "2021-01-01T21:20:00Z"
+    },
+    "loveId": "\"1\""
+}
+
+     
+
+post   
+{
+"_id": "XCtnQXSWatl7",
+"userInfo":
+{
+"country": "China",
+"avatarUrl": "https://9KYhM4bic7Rick6UQyxAQ/132",
+"nickName": "",
+"gender": 1,
+"language": "zh_CN",
+"city": "Hangzhou",
+"province": "Zhejiang"
+},
+"message": "加班做小程序",
+"imageFileIDList":
+[
+"cloud://online-2071e6.6f6e-online-2071e6/2013418.png"
+],
+"createTime":
+{
+"$date": "2019-01-01T13:12:33.948Z"
+},
+"_openid": "o7sqe4kVvQUkv2fJgPxI"
+}
